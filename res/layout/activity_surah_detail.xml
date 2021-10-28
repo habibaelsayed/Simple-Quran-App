@@ -1,0 +1,175 @@
+<RelativeLayout
+    tools:context=".activities.SurahDetailActivity"
+    android:background="#FFFEFE"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/card_view"
+        android:background="#01423B">
+
+        <RelativeLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#01423B">
+
+            <TextView
+                android:id="@+id/surah_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#01423B"
+                android:text="Fatiha"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/translation"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="The Opening"
+            android:layout_below="@+id/surah_name"
+            android:background="#01423B"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/type"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="Maccan 7 Aya"
+            android:layout_below="@+id/translation"
+            android:background="#01423B"/>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/card_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="@integer/material_motion_duration_long_1"
+            android:background="@drawable/start" />
+    <ImageButton
+        android:background="@null"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:id="@+id/settings_button"
+        android:src="@drawable/ic_settings"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/surah_detail_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/linear1"
+        android:layout_below="@+id/linear"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_play_arrow_24"
+
+            />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+
+
+            >
+
+        </TextView>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+
+            />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+
+
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

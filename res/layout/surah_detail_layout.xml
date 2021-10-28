@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.cardview.widget.CardView
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D4FFFB">
+    <RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+    android:layout_height="30dp"
+    android:layout_width="match_parent"
+    android:background="#00433B"
+    android:id="@+id/rl_top">
+    <LinearLayout
+    android:layout_margin="5dp"
+    android:layout_height="20dp"
+    android:layout_width="20dp"
+    android:background="@drawable/bg_circle"
+    android:gravity="center">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/aya_no"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/arabic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00433B"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arabic_text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:textIsSelectable="true"
+                android:textColor="#24756D"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

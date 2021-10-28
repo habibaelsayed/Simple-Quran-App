@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="16dp"
+    android:padding="16dp"
+    app:cardCornerRadius="16dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:background="@drawable/ic_bg_row"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/surah_number"
+                android:text="1"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#256861"
+                >
+            </TextView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/english_name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="fatiha" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_aya"
+                android:textColor="@color/black"
+                android:text="7 ayahs" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arabic_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="fatiha"
+            android:layout_margin="16dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

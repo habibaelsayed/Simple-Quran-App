@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/sheet_bg"
+    android:id="@+id/sheetContainer"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Translation"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+
+        ></TextView>
+
+    <RadioGroup
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/translation_group"
+
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:id="@+id/english_RB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="French"
+            android:id="@+id/french_RB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+
+
+
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="German"
+            android:id="@+id/german_RB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+
+            ></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Qarea"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        android:padding="16dp"></TextView>
+
+    <RadioGroup
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/audio_group"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abdul Basit Murattal"
+            android:id="@+id/abdul_basit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minshawi Mujawwad"
+            android:id="@+id/minshawi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+
+
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mishaari Raashid Al Aafaasee"
+            android:id="@+id/mishaari"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Mahmood Khaleel Al-Husaree"
+            android:id="@+id/husaree"
+            android:outlineSpotShadowColor="@color/black"
+
+            ></RadioButton>
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_settings_button"
+        android:text="save"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+
+        ></Button>
+
+
+
+
+</LinearLayout>
